@@ -30,7 +30,7 @@ const formData = event => {
   feedbackFormData[contactFormElementName] = contactFormElementValue;
 };
 
-feedbackFormEl.addEventListener('change', throttle(formData, 500));
+feedbackFormEl.addEventListener('input', throttle(formData, 500));
 
 feedbackFormEl.addEventListener('submit', event => {
   event.preventDefault();
